@@ -47,7 +47,7 @@ public class TestMyMerchantPortal
     public void AcceptedMessageShownWhenPaymentAccepted()
     {
         var paymentCard = "Card1";
-        var paymentAmount = 10.50m;
+        var paymentAmount = 10;
         var mockResponseCode = 1;
 
         var mockProvider = new Mock<IPaymentProviderApi>();
@@ -64,7 +64,7 @@ public class TestMyMerchantPortal
     public void DeclinedMessageShownWhenPaymentHasBeenDeclined()
     {
         var paymentCard = "Card2";
-        var paymentAmount = 20.50m;
+        var paymentAmount = 20;
         var mockResponseCode = 2;
 
         var mockProvider = new Mock<IPaymentProviderApi>();

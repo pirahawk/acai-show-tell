@@ -46,9 +46,9 @@ public class TestMyMerchantPortal
     // Theories are tests which are only true for a particular set of data. - XUnit
 
     [Theory]
-    [InlineData("Card1", 10.50, 1 ,"Payment Accepted")]
-    [InlineData("Card2", 20.50, 2 ,"Payment Declined")]
-    [InlineData("Card3", 30.50, 3 ,"Error Processing Payment")]
+    [InlineData("Card1", 10, 1 ,"Payment Accepted")]
+    [InlineData("Card2", 20, 2 ,"Payment Declined")]
+    [InlineData("Card3", 30, 3 ,"Error Processing Payment")]
     public void AcceptedMessageShownWhenPaymentAccepted(string paymentCard, decimal paymentAmount, int mockResponseCode, string expectedMessage)
     {
         var mockProvider = new Mock<IPaymentProviderApi>();

@@ -47,7 +47,7 @@ public class TestMyMerchantPortal
         var paymentProviderApi = new PaymentProviderApi();
         var merchant = new MerchantPortal(paymentProviderApi);
 
-        string responseMessage = merchant.MakePayment("Card1", 10.50m);
+        string responseMessage = merchant.MakePayment("Card1", 10);
 
         Assert.Equal("Payment Accepted", responseMessage);
     }
@@ -58,7 +58,7 @@ public class TestMyMerchantPortal
         var paymentProviderApi = new PaymentProviderApi();
         var merchant = new MerchantPortal(paymentProviderApi);
 
-        string responseMessage = merchant.MakePayment("Card2", 20.50m);
+        string responseMessage = merchant.MakePayment("Card2", 20);
 
         Assert.Equal("Payment Declined", responseMessage);
     }
