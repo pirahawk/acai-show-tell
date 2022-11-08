@@ -20,6 +20,12 @@ public class MerchantPortal
 
 public class PaymentProviderApi
 {
+    /*
+        Assume this method "should" return:
+        * 1 - if Payment was successfully accepted.
+        * 2 - if Payment was declined.
+        * 3 - if there was an error processing the payment.
+    */
     public int MakePayment(string cardNumer, decimal paymentAmount)
     {
         return 1;
@@ -29,7 +35,7 @@ public class PaymentProviderApi
 
 public class TestMyMerchantPortal
 {
-    // Facts are tests which are always true. They test invariant conditions.
+    // [Facts] are tests which are always true. They test invariant conditions.- XUnit
 
     [Fact]
     public void AcceptedMessageShownWhenPaymentAccepted()

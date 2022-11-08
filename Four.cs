@@ -43,7 +43,7 @@ public class PaymentProviderApi : IPaymentProviderApi
 
 public class TestMyMerchantPortal
 {
-    // Theories are tests which are only true for a particular set of data. - XUnit
+    // [Theory] are tests which are only true for a particular set of data. - XUnit
 
     [Theory]
     [InlineData("Card1", 10, 1 ,"Payment Accepted")]
