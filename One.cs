@@ -5,7 +5,7 @@ public class MerchantPortal
     public string MakePayment(string cardNumer, decimal paymentAmount)
     {
         PaymentProviderApi paymentProvider = new PaymentProviderApi();
-        var resultCode = (int)paymentProvider.MakePayment(cardNumer, paymentAmount);
+        var resultCode = paymentProvider.MakePayment(cardNumer, paymentAmount);
 
         var responseMessage = resultCode switch
         {
